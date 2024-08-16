@@ -1,0 +1,18 @@
+{
+    "builds": [
+      {
+        "src": "Coffee/package.json",
+        "use": "@vercel/static-build",
+        "config": {
+          "distDir": "Coffee/dist"
+        }
+      }
+    ],
+    "routes": [
+      {
+        "src": "/(.*)",
+        "dest": "/Coffee/index.html"
+      }
+    ]
+  }
+  
